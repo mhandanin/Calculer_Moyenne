@@ -9,14 +9,13 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:paddingTop="50dp"
-
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:gravity="center"
-        android:text="Calvuler Votre moyen FACILEMENT!"
+        android:paddingTop="50dp"
+        android:text="Calculer votre moyen FACILEMENT!"
         android:textSize="30sp" />
 
     <EditText
@@ -25,9 +24,8 @@
         android:layout_height="50dp"
         android:layout_below="@id/title"
         android:hint="Note de Math"
-        android:padding="15dp"
         android:inputType="numberDecimal"
-        />
+        android:padding="15dp" />
 
     <EditText
         android:id="@+id/noteSI"
@@ -35,9 +33,8 @@
         android:layout_height="50dp"
         android:layout_below="@id/noteMath"
         android:hint="Note de science d'ingénieur"
-        android:padding="15dp"
         android:inputType="numberDecimal"
-        />
+        android:padding="15dp" />
 
     <EditText
         android:id="@+id/notePH"
@@ -45,9 +42,8 @@
         android:layout_height="50dp"
         android:layout_below="@id/noteSI"
         android:hint="Note de Physique"
-        android:padding="15dp"
         android:inputType="numberDecimal"
-        />
+        android:padding="15dp" />
 
     <EditText
         android:id="@+id/noteFR"
@@ -55,9 +51,8 @@
         android:layout_height="50dp"
         android:layout_below="@id/notePH"
         android:hint="Note de Francais"
-        android:padding="15dp"
         android:inputType="numberDecimal"
-        />
+        android:padding="15dp" />
 
     <Button
         android:id="@+id/calculerBTN"
@@ -74,10 +69,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/calculerBTN"
         android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:text="Votre moyenne est: "
-
-        />
+        android:gravity="center" />
 
 
 </RelativeLayout>
