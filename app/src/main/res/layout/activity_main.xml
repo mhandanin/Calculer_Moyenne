@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="26dp"
+    tools:context=".MainActivity">
+
+    <TextView
+
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Calvuler Votre moyen FACILEMENT!"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/noteMath"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/title"
+        android:hint="Note de Math"
+        android:padding="15dp"
+        android:inputType="numberDecimal"
+        />
+
+    <EditText
+        android:id="@+id/noteSI"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/noteMath"
+        android:hint="Note de science d'ingénieur"
+        android:padding="15dp"
+        android:inputType="numberDecimal"
+        />
+
+    <EditText
+        android:id="@+id/notePH"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/noteSI"
+        android:hint="Note de Physique"
+        android:padding="15dp"
+        android:inputType="numberDecimal"
+        />
+
+    <EditText
+        android:id="@+id/noteFR"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/notePH"
+        android:hint="Note de Francais"
+        android:padding="15dp"
+        android:inputType="numberDecimal"
+        />
+
+    <Button
+        android:id="@+id/calculerBTN"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/noteFR"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/lime"
+        android:text="Calculer" />
+
+    <TextView
+        android:id="@+id/moyenne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculerBTN"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Votre moyenne est: "
+
+        />
+
+
+</RelativeLayout>
