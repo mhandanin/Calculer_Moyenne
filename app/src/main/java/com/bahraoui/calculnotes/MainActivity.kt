@@ -26,6 +26,10 @@ class MainActivity : AppCompatActivity() {
             val notePH = findViewById<EditText>(R.id.notePH).text.toString()
             val noteFR = findViewById<EditText>(R.id.noteFR).text.toString()
 
+            if(noteMath.isEmpty() || noteSI.isEmpty() || notePH.isEmpty() || noteFR.isEmpty()){
+                Toast.makeText(this,"S'il vous plaît remplire tous les champs!",Toast.LENGTH_LONG).show()
+                return@setOnClickListener
+            }
 
                 val noteMathDouble = noteMath.toDouble()
                 val noteSIDouble = noteSI.toDouble()
@@ -45,7 +49,7 @@ class MainActivity : AppCompatActivity() {
                 } else if (moy in 16.0..20.0) {
                     "Excellent"
                 } else {
-                    Toast.makeText(this, "S'il vous plaît entrer une note valide!", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "S'il vous plaît entrer des note valide!", Toast.LENGTH_LONG).show()
                     return@setOnClickListener
                 }
 
